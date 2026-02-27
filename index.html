@@ -8,7 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script> 
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> 
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -156,8 +157,105 @@ M K R
         </div>
     </section>
 
-    <section id="projects" class="min-h-[50vh] flex items-center justify-center border-t border-gray-800">
-        <h2 class="text-4xl text-gray-500">Projects Section Coming Soon</h2>
+    <section id="projects" class="py-20 bg-black">
+
+<div class="max-w-7xl mx-auto px-4">
+
+<h2 class="text-4xl font-bold text-center mb-14">
+My Projects
+</h2>
+
+<div class="swiper projectSwiper pb-14">
+
+<div class="swiper-wrapper">
+
+
+<!-- Project 1 -->
+<div class="swiper-slide">
+<div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:scale-105 transition duration-300">
+
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800"
+class="w-full h-48 md:h-56 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-bold mb-2">
+Cyber Cafe Website
+</h3>
+
+<p class="text-gray-400 text-sm mb-4">
+Website for online services and form filling.
+</p>
+
+<a href="https://mk-2006.github.io/RANJEET-CYBER-CAFE/"
+class="text-purple-400 hover:text-purple-300">
+View Project →
+</a>
+
+</div>
+</div>
+</div>
+
+
+<!-- Project 2 -->
+<div class="swiper-slide">
+<div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:scale-105 transition duration-300">
+
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800"
+class="w-full h-48 md:h-56 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-bold mb-2">
+Job Update Website
+</h3>
+
+<p class="text-gray-400 text-sm mb-4">
+Website for latest government job updates.
+</p>
+
+<a href="#" class="text-purple-400 hover:text-purple-300">
+View Project →
+</a>
+
+</div>
+</div>
+</div>
+
+
+<!-- Project 3 -->
+<div class="swiper-slide">
+<div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 hover:scale-105 transition duration-300">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+class="w-full h-48 md:h-56 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-xl font-bold mb-2">
+Portfolio Website
+</h3>
+
+<p class="text-gray-400 text-sm mb-4">
+Personal developer portfolio website.
+</p>
+
+<a href="#" class="text-purple-400 hover:text-purple-300">
+View Project →
+</a>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Pagination -->
+<div class="swiper-pagination !bottom-0"></div>
+
+</div>
+
+</div>
     </section>
     <!-- CONTACT -->
 
@@ -347,6 +445,40 @@ mobileLinks.forEach(link => {
         // Start typing effect
         type();
     </script>
+<script>
+var swiper = new Swiper(".projectSwiper", {
 
+loop: true,
+grabCursor: true,
+spaceBetween: 20,
+
+autoplay: {
+delay: 2500,
+disableOnInteraction: false,
+},
+
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+
+breakpoints: {
+
+0: {
+slidesPerView: 1
+},
+
+640: {
+slidesPerView: 2
+},
+
+1024: {
+slidesPerView: 3
+}
+
+}
+
+});
+</script>
 </body>
 </html>
