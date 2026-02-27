@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjeet Kumar | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> 
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #050510;
+            overflow-x: hidden;
+            color: white;
+        }
+
+        /* Home Section Styles */
+        .glow {
+            position: absolute;
+            width: 400px; 
+            height: 400px;
+            background: radial-gradient(circle, #7c3aed66, transparent 70%);
+            filter: blur(60px);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            z-index: 0; 
+        }
+
+        .fade-bottom {
+            mask-image: linear-gradient(to bottom, black 70%, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
+        }
+
+        /* About Section Styles */
+        .typing {
+            border-right: 3px solid #a78bfa;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="fixed w-full top-0 z-50 bg-[#050510]/90 backdrop-blur-sm flex justify-between items-center px-6 md:px-10 py-5 border-b border-gray-800">
+        <h1 class="text-xl font-semibold tracking-widest"><a href="index.html" class="text-2xl font-bold tracking-widest">
+M K R
+</a></h1>
+
+        <nav class="space-x-10 hidden md:block">
+            <a href="#home" class="hover:text-purple-400 transition">Home</a>
+            <a href="#about" class="hover:text-purple-400 transition">About Us</a>
+            <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
+            <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+        </nav>
+
+        <button id="menu-btn" class="md:hidden block focus:outline-none text-gray-300 hover:text-white z-50 relative">
+        <svg id="menu-svg" class="w-8 h-8 transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+</header>
+
+<div id="mobile-menu" class="fixed top-[72px] left-0 w-full bg-[#050510]/95 backdrop-blur-md flex flex-col items-center space-y-6 py-8 z-40 border-b border-gray-800 md:hidden shadow-2xl transition-all duration-500 ease-in-out transform -translate-y-full opacity-0 pointer-events-none">
+    <a href="#home" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Home</a>
+    <a href="#about" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">About Us</a>
+    <a href="#projects" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Projects</a>
+    <a href="#contact" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Contact</a>
+</div>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 pb-10 md:py-0">
+        <div class="grid md:grid-cols-3 items-center w-full max-w-6xl px-6 gap-10 md:gap-0">
+            
+            <div class="text-center md:text-left relative z-10">
+                <p class="text-purple-400 text-lg mb-2">Hello, I'm</p>
+                <h1 class="text-5xl font-extrabold leading-tight">
+                    Manjeet <br> Kumar
+                </h1>
+
+                <div class="mt-8 flex justify-center md:justify-start gap-5 text-gray-400">
+                    <a href="https://github.com/mk-2006" target="_blank"> 
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" class="w-7 h-7 invert hover:scale-110 transition" alt="GitHub"> 
+                    </a>
+                    <a href="https://www.instagram.com/itx_manjeet_______07" target="_blank"> 
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="w-7 h-7 invert hover:scale-110 transition" alt="Instagram"> 
+                    </a>
+                    <a href="https://www.facebook.com/share/1Avn26PsCq/" target="_blank"> 
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" class="w-7 h-7 invert hover:scale-110 transition" alt="Facebook"> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center items-center">
+                <div class="glow"></div>
+                <img class="fade-bottom w-80 relative z-10"
+                src="https://raw.githubusercontent.com/mk-2006/RANJEET-CYBER-CAFE/refs/heads/main/Mm.png"
+                alt="profile">
+            </div>
+
+            <div class="text-center md:text-right relative z-10">
+                <p class="text-purple-400 text-xl mb-2">Creative</p>
+                <h2 class="text-5xl font-extrabold leading-tight">
+                    Developer <br> & Designer
+                </h2>
+                <button class="mt-10 border border-purple-500 px-8 py-3 rounded-lg hover:bg-purple-600 transition font-semibold">
+                    <a href="resume.html" class="hover:text-purple-400 transition">Resume</a>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="min-h-screen flex items-center px-6 py-20 bg-[#020617] font-inter">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="flex justify-center">
+                <img src="https://mk-2006.github.io/RANJEET-CYBER-CAFE/Mm.png"
+                class="w-72 rounded-2xl shadow-2xl border border-gray-700" alt="Manjeet Photo">
+            </div>
+
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Hi, It's Manjeet
+                </h1>
+                
+                <h2 class="text-2xl text-purple-400 mb-6 font-semibold">
+                    I'm a <span id="typing" class="typing text-white"></span>
+                </h2>
+
+                <p class="text-gray-300 leading-relaxed mb-6 text-lg">
+                    I am currently pursuing BCA from IGNOU. I completed my Matric in 2022
+                    and Intermediate in 2024 from Jawahar Navodaya Vidyalaya Kishanganj
+                    (CBSE Board).
+                </p>
+
+                <p class="text-gray-400 text-lg">
+                    I enjoy building websites, working with technology and helping people
+                    with online services, form filling and internet related work.
+                </p>
+
+                <div class="mt-10">
+                    <a href="tel:9122508085" class="bg-purple-600 px-8 py-3 rounded-lg hover:bg-purple-700 transition font-semibold text-white inline-block">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="min-h-[50vh] flex items-center justify-center border-t border-gray-800">
+        <h2 class="text-4xl text-gray-500">Projects Section Coming Soon</h2>
+    </section>
+
+    <section id="contact" class="min-h-[50vh] flex items-center justify-center border-t border-gray-800 bg-[#020617]">
+        <h2 class="text-4xl text-gray-500">Contact Section Coming Soon</h2>
+    </section>
+
+    <script>
+        // --- Mobile Menu Toggle Logic (Professional Animation) ---
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+const menuIcon = document.getElementById('menu-icon');
+const menuSvg = document.getElementById('menu-svg');
+
+let isMenuOpen = false;
+
+function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    
+    if (isMenuOpen) {
+        // Slide down & fade in
+        mobileMenu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+        mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        
+        // Transform icon to 'X' with a spin
+        menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+        menuSvg.classList.add('rotate-90'); 
+    } else {
+        // Slide up & fade out
+        mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+        
+        // Transform icon back to Hamburger with reverse spin
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        menuSvg.classList.remove('rotate-90');
+    }
+}
+
+menuBtn.addEventListener('click', toggleMenu);
+
+// Close mobile menu when any link is clicked
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (isMenuOpen) toggleMenu();
+    });
+});
+
+        // --- Typing Effect Logic ---
+        const words = [
+            "Web Designer",
+            "Programmer",
+            "Graphic Designer",
+            "Web Developer",
+            "Tech Enthusiast"
+        ];
+
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+
+        function type() {
+            currentWord = words[i];
+            const typingElement = document.getElementById("typing");
+
+            if (isDeleting) {
+                typingElement.textContent = currentWord.substring(0, j--);
+            } else {
+                typingElement.textContent = currentWord.substring(0, j++);
+            }
+
+            if (!isDeleting && j === currentWord.length + 1) {
+                isDeleting = true;
+                setTimeout(type, 1000); // Pause at end of word
+                return;
+            }
+
+            if (isDeleting && j === 0) {
+                isDeleting = false;
+                i++;
+                if (i === words.length) i = 0;
+            }
+
+            // Adjust typing/deleting speed
+            const speed = isDeleting ? 60 : 120;
+            setTimeout(type, speed);
+        }
+
+        // Start typing effect
+        type();
+    </script>
+
+</body>
+</html>
