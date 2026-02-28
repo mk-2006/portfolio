@@ -62,36 +62,45 @@ border-radius:10px;
 
 <!-- NAVBAR -->
 
-<nav class="navbar px-6 py-4 flex justify-between items-center">
-
 <header class="fixed w-full top-0 z-50 bg-[#050510]/90 backdrop-blur-sm flex justify-between items-center px-6 md:px-10 py-5 border-b border-gray-800">
-        <h1 class="text-xl font-semibold tracking-widest"><a href="index.html" class="text-2xl font-bold tracking-widest">
+
+<h1 class="text-xl font-semibold tracking-widest">
+<a href="index.html" class="text-2xl font-bold tracking-widest">
 M K R
-</a></h1>
+</a>
+</h1>
 
-        <nav class="space-x-10 hidden md:block">
-            <a href="index.html#home" class="hover:text-purple-400 transition">Home</a>
-            <a href="index.html#about" class="hover:text-purple-400 transition">About Us</a>
-            <a href="index.html#projects" class="hover:text-purple-400 transition">Projects</a>
-            <a href="index.html#contact" class="hover:text-purple-400 transition">Contact</a>
-        </nav>
-
-        <button id="menu-btn" class="md:hidden block focus:outline-none text-gray-300 hover:text-white z-50 relative">
-        <svg id="menu-svg" class="w-8 h-8 transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-    </button>
-</header>
-
-<div id="mobile-menu" class="fixed top-[72px] left-0 w-full bg-[#050510]/95 backdrop-blur-md flex flex-col items-center space-y-6 py-8 z-40 border-b border-gray-800 md:hidden shadow-2xl transition-all duration-500 ease-in-out transform -translate-y-full opacity-0 pointer-events-none">
-    <a href="index.html#home" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Home</a>
-    <a href="index.html#about" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">About Us</a>
-    <a href="index.html#projects" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Projects</a>
-    <a href="index.html#contact" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Contact</a>
-</div>
-
+<nav class="space-x-10 hidden md:block">
+<a href="index.html#home" class="hover:text-purple-400 transition">Home</a>
+<a href="index.html#about" class="hover:text-purple-400 transition">About</a>
+<a href="index.html#projects" class="hover:text-purple-400 transition">Projects</a>
+<a href="index.html#contact" class="hover:text-purple-400 transition">Contact</a>
 </nav>
 
+<button id="menu-btn" class="md:hidden block focus:outline-none text-gray-300 hover:text-white z-50 relative">
+<svg id="menu-svg" class="w-8 h-8 transition-transform duration-300 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 pt-24"></div>
+
+<div id="mobile-menu" class="fixed top-[72px] left-0 w-full bg-[#050510]/95 backdrop-blur-md flex flex-col items-center space-y-6 py-8 z-40 border-b border-gray-800 md:hidden shadow-2xl transition-all duration-500 ease-in-out transform -translate-y-full opacity-0 pointer-events-none">
+
+<a href="index.html#home" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Home</a>
+
+<a href="index.html#about" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">About</a>
+
+<a href="index.html#projects" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Projects</a>
+
+<a href="index.html#contact" class="mobile-link text-lg text-gray-300 hover:text-purple-400 hover:scale-110 transition-transform duration-200">Contact</a>
+
+</div>
+        
 <!-- MAIN LAYOUT -->
 
 <div class="max-w-7xl mx-auto grid md:grid-cols-3">
